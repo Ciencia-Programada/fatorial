@@ -1,11 +1,11 @@
+from functools import reduce
+from operator import mul
+
 import pytest
 
 
 def fatorial(numero):
-    if numero in (0, 1):
-        return 1
-    else:
-        return numero * fatorial(numero - 1)
+    return reduce(mul, range(1, numero + 1)) if numero >= 1 else 1
 
 
 def test_fatorial_quatro():
