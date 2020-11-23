@@ -3,8 +3,7 @@ import pytest
 
 def fatorial(numero):
     resultado = 1
-    if numero in (0, 1):
-        return resultado
+
     for n in range(1, numero + 1):
         resultado *= n
     return resultado
