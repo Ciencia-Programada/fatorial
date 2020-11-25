@@ -11,9 +11,9 @@ if __name__ == '__main__':
         try:
             n = int(input('Forneça um número inteiro: '))
         except ValueError:
-            print('ERRO: Forneça um número inteiro positivo.')
+            print('ERRO: Forneça um número inteiro positivo.', end='\n\n')
         except KeyboardInterrupt:
             print(' Excecução finalizada pelo usuário.')
             break
         else:
-            print(fatorial(n))
+            print(f'O fatorial de {n} é {fatorial(n)}', end='\n\n')
