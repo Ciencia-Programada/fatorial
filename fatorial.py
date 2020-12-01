@@ -13,7 +13,7 @@ if __name__ == '__main__':
         except ValueError:
             print('ERRO: Forneça um número inteiro positivo.', end='\n\n')
         except KeyboardInterrupt:
-            print(' Excecução finalizada pelo usuário.')
+            print(' Execução finalizada pelo usuário.')
             break
         else:
             print(f'O fatorial de {n} é {fatorial(n)}', end='\n\n')
